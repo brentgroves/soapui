@@ -500,38 +500,23 @@
       <http:address location="http://api.plexonline.com/DataSource/Service.asmx"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint></con:endpoints><con:operation id="db7a03a8-9eed-4518-aa76-0751f69109b0" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSource" name="ExecuteDataSource" bindingOperationName="ExecuteDataSource" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="be0e4f73-bf77-4961-b342-464cbba9f43b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.plexus-online.com/DataSource">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint></con:endpoints><con:operation id="db7a03a8-9eed-4518-aa76-0751f69109b0" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSource" name="ExecuteDataSource" bindingOperationName="ExecuteDataSource" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="be0e4f73-bf77-4961-b342-464cbba9f43b" name="Workcenter_Key_From_PLCName_Get"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.plexus-online.com/DataSource">
    <soap:Header/>
    <soap:Body>
-      <dat:ExecuteDataSource>
-         <!--Optional:-->
-         <dat:ExecuteDataSourceRequest>
-            <!--Optional:-->
-            <dat:DataSourceKey>?</dat:DataSourceKey>
-            <!--Optional:-->
-            <dat:InputParameters>
-               <!--Zero or more repetitions:-->
-               <dat:InputParameter>
-                  <!--Optional:-->
-                  <dat:Value>?</dat:Value>
-                  <!--Optional:-->
-                  <dat:Name>?</dat:Name>
-                  <dat:Required>?</dat:Required>
-                  <dat:Output>?</dat:Output>
-                  <!--Optional:-->
-                  <dat:DefaultValue>?</dat:DefaultValue>
-                  <!--Optional:-->
-                  <dat:Message>?</dat:Message>
-               </dat:InputParameter>
-            </dat:InputParameters>
-            <!--Optional:-->
-            <dat:DataSourceName>?</dat:DataSourceName>
-            <!--Optional:-->
-            <dat:DataBase>?</dat:DataBase>
-         </dat:ExecuteDataSourceRequest>
-      </dat:ExecuteDataSource>
+      <ExecuteDataSource xmlns="http://www.plexus-online.com/DataSource">
+         <ExecuteDataSourceRequest>
+            <DataSourceKey>7868</DataSourceKey>
+            <InputParameters>
+               <InputParameter>
+                  <Value>CNC103</Value>
+                  <Name>@PLC_Name</Name>
+               </InputParameter>
+            </InputParameters>
+            <DataSourceName>Workcenter_Key_From_PLCName_Get</DataSourceName>
+         </ExecuteDataSourceRequest>
+      </ExecuteDataSource>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ServiceSoap/ExecuteDataSourceRequest"/></con:call></con:operation><con:operation id="3ef50037-f6f9-4080-b523-42ce247be42a" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" name="ExecuteDataSourceByDataSourceKey" bindingOperationName="ExecuteDataSourceByDataSourceKey" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="58836a58-be10-4875-8c56-f453ce168c25" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.plexus-online.com/DataSource">
+</soap:Envelope>]]></con:request><con:credentials><con:username>BuscheAvillaKorsws@plex.com</con:username><con:password>5b11b45-f59f-</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ServiceSoap/ExecuteDataSourceRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="3ef50037-f6f9-4080-b523-42ce247be42a" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" name="ExecuteDataSourceByDataSourceKey" bindingOperationName="ExecuteDataSourceByDataSourceKey" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="58836a58-be10-4875-8c56-f453ce168c25" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.plexus-online.com/DataSource">
    <soap:Header/>
    <soap:Body>
       <dat:ExecuteDataSourceByDataSourceKey>
