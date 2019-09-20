@@ -516,6 +516,21 @@
          </ExecuteDataSourceRequest>
       </ExecuteDataSource>
    </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>BuscheAvillaKorsws@plex.com</con:username><con:password>5b11b45-f59f-</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ServiceSoap/ExecuteDataSourceRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="88dfc1bb-5d63-4af7-bb8d-7b27083fede1" name="Control_Panel_Job_Get_2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.plexus-online.com/DataSource">
+    <soap:Body>
+        <dat:ExecuteDataSource xmlns="http://www.plexus-online.com/DataSource">
+            <dat:ExecuteDataSourceRequest>
+                <dat:DataSourceKey>2272</dat:DataSourceKey>
+                <dat:InputParameters>
+                    <dat:InputParameter>
+                        <dat:Name>Workcenter_Key</dat:Name>
+                        <dat:Value>61324</dat:Value>
+                    </dat:InputParameter>
+                </dat:InputParameters>
+            </dat:ExecuteDataSourceRequest>
+        </dat:ExecuteDataSource>
+    </soap:Body>
 </soap:Envelope>]]></con:request><con:credentials><con:username>BuscheAvillaKorsws@plex.com</con:username><con:password>5b11b45-f59f-</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ServiceSoap/ExecuteDataSourceRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="3ef50037-f6f9-4080-b523-42ce247be42a" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" name="ExecuteDataSourceByDataSourceKey" bindingOperationName="ExecuteDataSourceByDataSourceKey" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="58836a58-be10-4875-8c56-f453ce168c25" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.plexus-online.com/DataSource">
    <soap:Header/>
    <soap:Body>
