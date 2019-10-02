@@ -487,6 +487,62 @@
          </dat:ExecuteDataSourceRequest>
       </dat:ExecuteDataSource>
    </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>BuscheAlbionWs2@plex.com</con:username><con:password>6afff48-ba19-</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call><con:call id="0febfa0b-6a7e-4a09-96f2-76154b8ad24b" name="Workcenter_Key_From_PLCName_Get"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource>
+         <!--Optional:-->
+         <dat:ExecuteDataSourceRequest>
+            <!--Optional:-->
+            <dat:DataSourceKey>7868</dat:DataSourceKey>
+            <!--Optional:-->
+            <dat:InputParameters>
+               <!--Zero or more repetitions:-->
+               <dat:InputParameter>
+                  <!--Optional:-->
+                  <dat:Value>CNC209</dat:Value>
+                  <!--Optional:-->
+                  <dat:Name>@PLC_Name</dat:Name>
+                  <dat:Required>true</dat:Required>
+                  <dat:Output>false</dat:Output>
+                  <!--Optional:-->
+                  <dat:DefaultValue>?</dat:DefaultValue>
+                  <!--Optional:-->
+                  <dat:Message>?</dat:Message>
+               </dat:InputParameter>
+            </dat:InputParameters>
+            <!--Optional:-->
+            <dat:DataSourceName>?</dat:DataSourceName>
+            <!--Optional:-->
+            <dat:DataBase>?</dat:DataBase>
+         </dat:ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>BuscheAlbionWs2@plex.com</con:username><con:password>6afff48-ba19-</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call><con:call id="d8bf6afc-f134-4cdb-8820-4c98bb7fe6ff" name="StatusPollClient"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource>
+         <!--Optional:-->
+         <dat:ExecuteDataSourceRequest>
+            <!--Optional:-->
+            <dat:DataSourceKey>37686</dat:DataSourceKey>
+            <!--Optional:-->
+            <dat:InputParameters>
+               <!--Zero or more repetitions:-->
+               <dat:InputParameter>
+                   <dat:Name>Workcenter_Key</dat:Name>
+                   <dat:Value>61295</dat:Value>
+		        <dat:Required>false</dat:Required>
+		        <dat:Output>false</dat:Output>
+		      </dat:InputParameter>
+            </dat:InputParameters>
+            <!--Optional:-->
+            <dat:DataSourceName>?</dat:DataSourceName>
+            <!--Optional:-->
+            <dat:DataBase>?</dat:DataBase>
+         </dat:ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:username>BuscheAlbionWs2@plex.com</con:username><con:password>6afff48-ba19-</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="1053dc55-99f8-4456-95b0-1e0cdd6c6b69" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" name="ExecuteDataSourceByDataSourceKey" bindingOperationName="ExecuteDataSourceByDataSourceKey" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="473001d1-1a9d-4163-a663-b5869e22313a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
    <soapenv:Header/>
    <soapenv:Body>
