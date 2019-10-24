@@ -505,6 +505,53 @@
          </dat:ExecuteDataSourceRequest>
       </dat:ExecuteDataSource>
    </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>BuscheAvillaKorsws@plex.com</con:username><con:password>5b11b45-f59f-</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call><con:call id="5ae121e0-4dde-40c0-b0b7-f3f9bffe1a9c" name="RecordProduction"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource xmlns="http://www.plexus-online.com/DataSource">
+         <dat:ExecuteDataSourceRequest>
+            <dat:DataSourceKey>21443</dat:DataSourceKey>
+            <dat:InputParameters>
+               <dat:InputParameter>
+                  <dat:Name>PLC_Name</dat:Name>
+                  <dat:Value>CNC362</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Output_Stream_Id</dat:Name>
+                  <dat:Value>1</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Container_Full</dat:Name>
+                  <dat:Value>true</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Qty_Is_Container_Qty</dat:Name>
+                  <dat:Value>true</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Validate_Only</dat:Name>
+                  <dat:Value>false</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Quantity</dat:Name>
+                  <dat:Value>1</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Piece_Serialized</dat:Name>
+                  <dat:Value></dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Add_To_Master</dat:Name>
+                  <dat:Value>0</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Start_New_Container</dat:Name>
+                  <dat:Value>false</dat:Value>
+               </dat:InputParameter>
+            </dat:InputParameters>
+         </dat:ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:username>BuscheAvillaKorsws@plex.com</con:username><con:password>5b11b45-f59f-</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="810d74eb-05c3-4220-a3b7-cb53816e5db8" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" name="ExecuteDataSourceByDataSourceKey" bindingOperationName="ExecuteDataSourceByDataSourceKey" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="eef1c46e-c544-45ff-860e-4c0cdabd5a8e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
    <soapenv:Header/>
    <soapenv:Body>
