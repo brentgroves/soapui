@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="556895ab-916a-4358-b177-71a4095c46f7" activeEnvironment="Default" name="PlexTestServer" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="5e4c4f0f-24aa-4161-b3bf-3bf20ef706e2" wsaVersion="NONE" name="ServiceSoap" type="wsdl" bindingName="{http://www.plexus-online.com/DataSource}ServiceSoap" soapVersion="1_1" anonymous="optional" definition="file:/home/brent/srcsoapui/plex-test.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint></con:endpoints><con:operation id="3b40b08a-2743-4569-93a6-517e3678944c" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSource" name="ExecuteDataSource" bindingOperationName="ExecuteDataSource" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="65e10828-347d-4217-a238-f40daf341c95" name="GetContainer"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource>
+         <!--Optional:-->
+         <dat:ExecuteDataSourceRequest>
+            <!--Optional:-->
+            <dat:DataSourceKey>10837</dat:DataSourceKey>
+            <!--Optional:-->
+            <dat:InputParameters>
+               <!--Zero or more repetitions:-->
+               <dat:InputParameter>
+                  <!--Optional:-->
+                  <!--Optional:-->
+				<dat:Value>BV066378</dat:Value>
+				<dat:Name>Serial_No</dat:Name>
+                  <dat:Required>true</dat:Required>
+                  <dat:Output>false</dat:Output>
+                  <!--Optional:-->
+                  <dat:DefaultValue>?</dat:DefaultValue>
+                  <!--Optional:-->
+                  <dat:Message>?</dat:Message>
+               </dat:InputParameter>
+            </dat:InputParameters>
+            <!--Optional:-->
+            <dat:DataSourceName>?</dat:DataSourceName>
+            <!--Optional:-->
+            <dat:DataBase>?</dat:DataBase>
+         </dat:ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call><con:call id="ec0ab052-120e-4af4-a8ba-c205007bbd09" name="ControlPanelJobGet2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource>
+         <!--Optional:-->
+         <dat:ExecuteDataSourceRequest>
+            <!--Optional:-->
+            <dat:DataSourceKey>2272</dat:DataSourceKey>
+            <!--Optional:-->
+            <dat:InputParameters>
+               <!--Zero or more repetitions:-->
+               <dat:InputParameter>
+                  <!--Optional:-->
+                  <!--Optional:-->
+				<dat:Value>61314</dat:Value>
+				<dat:Name>Workcenter_Key</dat:Name>
+
+                  <dat:Required>true</dat:Required>
+                  <dat:Output>false</dat:Output>
+                  <!--Optional:-->
+                  <dat:DefaultValue>?</dat:DefaultValue>
+                  <!--Optional:-->
+                  <dat:Message>?</dat:Message>
+               </dat:InputParameter>
+            </dat:InputParameters>
+            <!--Optional:-->
+            <dat:DataSourceName>?</dat:DataSourceName>
+            <!--Optional:-->
+            <dat:DataBase>?</dat:DataBase>
+         </dat:ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call><con:call id="89b5f4d4-727b-4b42-8906-2c03a6c1af54" name="RecordProduction"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource xmlns="http://www.plexus-online.com/DataSource">
+         <dat:ExecuteDataSourceRequest>
+            <dat:DataSourceKey>21443</dat:DataSourceKey>
+            <dat:InputParameters>
+               <dat:InputParameter>
+                  <dat:Name>PLC_Name</dat:Name>
+                  <dat:Value>CNC362</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Output_Stream_Id</dat:Name>
+                  <dat:Value>1</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Container_Full</dat:Name>
+                  <dat:Value>true</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Qty_Is_Container_Qty</dat:Name>
+                  <dat:Value>true</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Validate_Only</dat:Name>
+                  <dat:Value>false</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Quantity</dat:Name>
+                  <dat:Value>1</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Piece_Serialized</dat:Name>
+                  <dat:Value></dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Add_To_Master</dat:Name>
+                  <dat:Value>0</dat:Value>
+               </dat:InputParameter>
+               <dat:InputParameter>
+                  <dat:Name>Start_New_Container</dat:Name>
+                  <dat:Value>false</dat:Value>
+               </dat:InputParameter>
+            </dat:InputParameters>
+         </dat:ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call><con:call id="368c3e1d-9574-4b03-95ae-4d6afcde3ad3" name="SupplierPickerGet"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource>
+         <ExecuteDataSourceRequest xmlns="http://www.plexus-online.com/DataSource">
+            <DataSourceKey>4624</DataSourceKey>
+            <InputParameters>
+               <InputParameter>
+                  <Value>%BORN%</Value>
+                  <Name>@Supplier_Code</Name>
+                  <Required>false</Required>
+                  <Output>false</Output>
+               </InputParameter>
+               <InputParameter>
+                  <Value></Value>
+                  <Name>@Supplier_Type</Name>
+                  <Required>false</Required>
+                  <Output>false</Output>
+               </InputParameter>
+               <InputParameter>
+                  <Value>0</Value>
+                  <Name>@Active_Only</Name>
+                  <Required>false</Required>
+                  <Output>false</Output>
+               </InputParameter>
+               <InputParameter>
+                  <Value>0</Value>
+                  <Name>@Supplier_Code_Name_Combine</Name>
+                  <Required>false</Required>
+                  <Output>false</Output>
+               </InputParameter>
+            </InputParameters>
+            <DataSourceName>Suppliers_Picker_Get</DataSourceName>
+         </ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call><con:call id="870f51ed-c3b6-4e10-b6be-eca97c616a88" name="ItemCategoriesGet"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource>
+         <!--Optional:-->
+         <dat:ExecuteDataSourceRequest>
+            <!--Optional:-->
+            <dat:DataSourceKey>2912</dat:DataSourceKey>
+            <!--Optional:-->
+            <dat:InputParameters>
+               <!--Zero or more repetitions:-->
+             </dat:InputParameters>
+            <!--Optional:-->
+            <dat:DataSourceName>?</dat:DataSourceName>
+            <!--Optional:-->
+            <dat:DataBase>?</dat:DataBase>
+         </dat:ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call><con:call id="2189a0cc-dc11-44dd-8afd-715928ec329c" name="StatusPollClient"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource>
+         <!--Optional:-->
+         <dat:ExecuteDataSourceRequest>
+            <!--Optional:-->
+            <dat:DataSourceKey>37686</dat:DataSourceKey>
+            <!--Optional:-->
+            <dat:InputParameters>
+               <!--Zero or more repetitions:-->
+               <dat:InputParameter>
+                   <dat:Name>Workcenter_Key</dat:Name>
+                   <dat:Value>61295</dat:Value>
+		        <dat:Required>false</dat:Required>
+		        <dat:Output>false</dat:Output>
+		      </dat:InputParameter>
+            </dat:InputParameters>
+            <!--Optional:-->
+            <dat:DataSourceName>?</dat:DataSourceName>
+            <!--Optional:-->
+            <dat:DataBase>?</dat:DataBase>
+         </dat:ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call><con:call id="093a3534-ca9b-4d1c-8e92-75dbeae2efca" name="WorkcenterKeyFromPLCNameGet"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource>
+         <!--Optional:-->
+         <dat:ExecuteDataSourceRequest>
+            <!--Optional:-->
+            <dat:DataSourceKey>7868</dat:DataSourceKey>
+            <!--Optional:-->
+            <dat:InputParameters>
+               <!--Zero or more repetitions:-->
+               <dat:InputParameter>
+                  <!--Optional:-->
+                  <dat:Value>CNC209</dat:Value>
+                  <!--Optional:-->
+                  <dat:Name>@PLC_Name</dat:Name>
+                  <dat:Required>true</dat:Required>
+                  <dat:Output>false</dat:Output>
+                  <!--Optional:-->
+                  <dat:DefaultValue>?</dat:DefaultValue>
+                  <!--Optional:-->
+                  <dat:Message>?</dat:Message>
+               </dat:InputParameter>
+            </dat:InputParameters>
+            <!--Optional:-->
+            <dat:DataSourceName>?</dat:DataSourceName>
+            <!--Optional:-->
+            <dat:DataBase>?</dat:DataBase>
+         </dat:ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f57b43ff-d827-4afe-a998-3d8cad66897c" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" name="ExecuteDataSourceByDataSourceKey" bindingOperationName="ExecuteDataSourceByDataSourceKey" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3c214397-1849-4fd2-9b00-293c58d135ce" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSourceByDataSourceKey>
+         <dat:dataSourceKey>?</dat:dataSourceKey>
+      </dat:ExecuteDataSourceByDataSourceKey>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey"/></con:call></con:operation><con:operation id="1bf162af-4c19-42cd-aad9-399bd7f947ee" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourcePost" name="ExecuteDataSourcePost" bindingOperationName="ExecuteDataSourcePost" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="24808d4a-eeaa-4a7d-a374-08eea9bdd157" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSourcePost>
+         <dat:dataSourceKey>?</dat:dataSourceKey>
+         <!--Optional:-->
+         <dat:parameterNames>?</dat:parameterNames>
+         <!--Optional:-->
+         <dat:parameterValues>?</dat:parameterValues>
+         <!--Optional:-->
+         <dat:delimeter>?</dat:delimeter>
+      </dat:ExecuteDataSourcePost>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSourcePost"/></con:call></con:operation><con:operation id="4cd14f1c-041a-4260-8ea6-600e28c9e960" isOneWay="false" action="http://www.plexus-online.com/DataSource/GetDataSourceRequestTemplate" name="GetDataSourceRequestTemplate" bindingOperationName="GetDataSourceRequestTemplate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0420b4e2-dab3-4b34-a93c-b85a0e2dcf06" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetDataSourceRequestTemplate>
+         <dat:dataSourceKey>?</dat:dataSourceKey>
+      </dat:GetDataSourceRequestTemplate>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/GetDataSourceRequestTemplate"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="93163450-7568-4f60-b631-6be72fb434cb" wsaVersion="NONE" name="ServiceSoap12" type="wsdl" bindingName="{http://www.plexus-online.com/DataSource}ServiceSoap12" soapVersion="1_2" anonymous="optional" definition="file:/home/brent/srcsoapui/plex-test.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/home/brent/srcsoapui/plex-test.wsdl"><con:part><con:url>file:/home/brent/srcsoapui/plex-test.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.plexus-online.com/DataSource" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.plexus-online.com/DataSource" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.plexus-online.com/DataSource">
+      <s:element name="ExecuteDataSource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteDataSourceRequest" type="tns:ExecuteDataSourceRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExecuteDataSourceRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DataSourceKey" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="InputParameters" type="tns:ArrayOfInputParameter"/>
+          <s:element minOccurs="0" maxOccurs="1" name="DataSourceName" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="DataBase" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInputParameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InputParameter" nillable="true" type="tns:InputParameter"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InputParameter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Parameter">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Required" type="s:boolean"/>
+              <s:element minOccurs="1" maxOccurs="1" name="Output" type="s:boolean"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultValue" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Parameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OutputParameter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Parameter"/>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ExecuteDataSourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteDataSourceResult" nillable="true" type="tns:ExecuteDataSourceResult"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExecuteDataSourceResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseResult">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="DataSourceKey" type="s:int"/>
+              <s:element minOccurs="1" maxOccurs="1" name="QuarantinedForDevelopment" nillable="true" type="s:boolean"/>
+              <s:element minOccurs="1" maxOccurs="1" name="LastPrimaryDeployment" nillable="true" type="s:dateTime"/>
+              <s:element minOccurs="1" maxOccurs="1" name="LastTestDeployment" nillable="true" type="s:dateTime"/>
+              <s:element minOccurs="1" maxOccurs="1" name="Version" nillable="true" type="s:int"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DataSourceName" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="ResultSets" type="tns:ArrayOfResultSet"/>
+              <s:element minOccurs="0" maxOccurs="1" name="OutputParameters" type="tns:ArrayOfOutputParameter"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseResult" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StatusNo" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Error" type="s:boolean"/>
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorNo" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="InstanceNo" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfResultSet">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ResultSet" nillable="true" type="tns:ResultSet"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResultSet">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RowCount" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Rows" type="tns:ArrayOfRow"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRow">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Row" nillable="true" type="tns:Row"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Row">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Columns" type="tns:ArrayOfColumn"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfColumn">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Column" nillable="true" type="tns:Column"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Column">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOutputParameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OutputParameter" nillable="true" type="tns:OutputParameter"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ExecuteDataSourceByDataSourceKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dataSourceKey" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteDataSourceByDataSourceKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteDataSourceByDataSourceKeyResult" nillable="true" type="tns:ExecuteDataSourceResult"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataSourceRequestTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dataSourceKey" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataSourceRequestTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetDataSourceRequestTemplateResult" nillable="true" type="tns:GetTemplateResult"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetTemplateResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseResult">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ExecuteDataSourceRequest" type="tns:ExecuteDataSourceRequest"/>
+              <s:element minOccurs="0" maxOccurs="1" name="ResultSets" type="tns:ArrayOfResultSet"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ExecuteDataSourcePost">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dataSourceKey" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="parameterNames" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="parameterValues" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="delimeter" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteDataSourcePostResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteDataSourcePostResult" nillable="true" type="tns:ExecuteDataSourceResult"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteDataSourceResult" nillable="true" type="tns:ExecuteDataSourceResult"/>
+      <s:element name="GetTemplateResult" nillable="true" type="tns:GetTemplateResult"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExecuteDataSourceSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteDataSource"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourceSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteDataSourceResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourceByDataSourceKeySoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteDataSourceByDataSourceKey"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourceByDataSourceKeySoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteDataSourceByDataSourceKeyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetDataSourceRequestTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataSourceRequestTemplate"/>
+  </wsdl:message>
+  <wsdl:message name="GetDataSourceRequestTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataSourceRequestTemplateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourcePostSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteDataSourcePost"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourcePostSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteDataSourcePostResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourceByDataSourceKeyHttpGetIn">
+    <wsdl:part name="dataSourceKey" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourceByDataSourceKeyHttpGetOut">
+    <wsdl:part name="Body" element="tns:ExecuteDataSourceResult"/>
+  </wsdl:message>
+  <wsdl:message name="GetDataSourceRequestTemplateHttpGetIn">
+    <wsdl:part name="dataSourceKey" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetDataSourceRequestTemplateHttpGetOut">
+    <wsdl:part name="Body" element="tns:GetTemplateResult"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourcePostHttpGetIn">
+    <wsdl:part name="dataSourceKey" type="s:string"/>
+    <wsdl:part name="parameterNames" type="s:string"/>
+    <wsdl:part name="parameterValues" type="s:string"/>
+    <wsdl:part name="delimeter" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourcePostHttpGetOut">
+    <wsdl:part name="Body" element="tns:ExecuteDataSourceResult"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourceByDataSourceKeyHttpPostIn">
+    <wsdl:part name="dataSourceKey" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourceByDataSourceKeyHttpPostOut">
+    <wsdl:part name="Body" element="tns:ExecuteDataSourceResult"/>
+  </wsdl:message>
+  <wsdl:message name="GetDataSourceRequestTemplateHttpPostIn">
+    <wsdl:part name="dataSourceKey" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetDataSourceRequestTemplateHttpPostOut">
+    <wsdl:part name="Body" element="tns:GetTemplateResult"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourcePostHttpPostIn">
+    <wsdl:part name="dataSourceKey" type="s:string"/>
+    <wsdl:part name="parameterNames" type="s:string"/>
+    <wsdl:part name="parameterValues" type="s:string"/>
+    <wsdl:part name="delimeter" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteDataSourcePostHttpPostOut">
+    <wsdl:part name="Body" element="tns:ExecuteDataSourceResult"/>
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="ExecuteDataSource">
+      <wsdl:input message="tns:ExecuteDataSourceSoapIn"/>
+      <wsdl:output message="tns:ExecuteDataSourceSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSourceByDataSourceKey">
+      <wsdl:input message="tns:ExecuteDataSourceByDataSourceKeySoapIn"/>
+      <wsdl:output message="tns:ExecuteDataSourceByDataSourceKeySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSourceRequestTemplate">
+      <wsdl:input message="tns:GetDataSourceRequestTemplateSoapIn"/>
+      <wsdl:output message="tns:GetDataSourceRequestTemplateSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSourcePost">
+      <wsdl:input message="tns:ExecuteDataSourcePostSoapIn"/>
+      <wsdl:output message="tns:ExecuteDataSourcePostSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="ExecuteDataSourceByDataSourceKey">
+      <wsdl:input message="tns:ExecuteDataSourceByDataSourceKeyHttpGetIn"/>
+      <wsdl:output message="tns:ExecuteDataSourceByDataSourceKeyHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSourceRequestTemplate">
+      <wsdl:input message="tns:GetDataSourceRequestTemplateHttpGetIn"/>
+      <wsdl:output message="tns:GetDataSourceRequestTemplateHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSourcePost">
+      <wsdl:input message="tns:ExecuteDataSourcePostHttpGetIn"/>
+      <wsdl:output message="tns:ExecuteDataSourcePostHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="ExecuteDataSourceByDataSourceKey">
+      <wsdl:input message="tns:ExecuteDataSourceByDataSourceKeyHttpPostIn"/>
+      <wsdl:output message="tns:ExecuteDataSourceByDataSourceKeyHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSourceRequestTemplate">
+      <wsdl:input message="tns:GetDataSourceRequestTemplateHttpPostIn"/>
+      <wsdl:output message="tns:GetDataSourceRequestTemplateHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSourcePost">
+      <wsdl:input message="tns:ExecuteDataSourcePostHttpPostIn"/>
+      <wsdl:output message="tns:ExecuteDataSourcePostHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ExecuteDataSource">
+      <soap:operation soapAction="http://www.plexus-online.com/DataSource/ExecuteDataSource" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSourceByDataSourceKey">
+      <soap:operation soapAction="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSourceRequestTemplate">
+      <soap:operation soapAction="http://www.plexus-online.com/DataSource/GetDataSourceRequestTemplate" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSourcePost">
+      <soap:operation soapAction="http://www.plexus-online.com/DataSource/ExecuteDataSourcePost" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ExecuteDataSource">
+      <soap12:operation soapAction="http://www.plexus-online.com/DataSource/ExecuteDataSource" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSourceByDataSourceKey">
+      <soap12:operation soapAction="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSourceRequestTemplate">
+      <soap12:operation soapAction="http://www.plexus-online.com/DataSource/GetDataSourceRequestTemplate" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSourcePost">
+      <soap12:operation soapAction="http://www.plexus-online.com/DataSource/ExecuteDataSourcePost" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="ExecuteDataSourceByDataSourceKey">
+      <http:operation location="/ExecuteDataSourceByDataSourceKey"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSourceRequestTemplate">
+      <http:operation location="/GetDataSourceRequestTemplate"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSourcePost">
+      <http:operation location="/ExecuteDataSourcePost"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="ExecuteDataSourceByDataSourceKey">
+      <http:operation location="/ExecuteDataSourceByDataSourceKey"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSourceRequestTemplate">
+      <http:operation location="/GetDataSourceRequestTemplate"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSourcePost">
+      <http:operation location="/ExecuteDataSourcePost"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="https://testapi.plexonline.com/DataSource/Service.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="https://testapi.plexonline.com/DataSource/Service.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="http://testapi.plexonline.com/DataSource/Service.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://testapi.plexonline.com/DataSource/Service.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint></con:endpoints><con:operation id="09b54cd8-4258-4737-8a53-c927aaae8101" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSource" name="ExecuteDataSource" bindingOperationName="ExecuteDataSource" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d37c97ba-3704-4b1b-ac8e-d3060b9ff10f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soap:Header/>
+   <soap:Body>
+      <dat:ExecuteDataSource>
+         <!--Optional:-->
+         <dat:ExecuteDataSourceRequest>
+            <!--Optional:-->
+            <dat:DataSourceKey>?</dat:DataSourceKey>
+            <!--Optional:-->
+            <dat:InputParameters>
+               <!--Zero or more repetitions:-->
+               <dat:InputParameter>
+                  <!--Optional:-->
+                  <dat:Value>?</dat:Value>
+                  <!--Optional:-->
+                  <dat:Name>?</dat:Name>
+                  <dat:Required>?</dat:Required>
+                  <dat:Output>?</dat:Output>
+                  <!--Optional:-->
+                  <dat:DefaultValue>?</dat:DefaultValue>
+                  <!--Optional:-->
+                  <dat:Message>?</dat:Message>
+               </dat:InputParameter>
+            </dat:InputParameters>
+            <!--Optional:-->
+            <dat:DataSourceName>?</dat:DataSourceName>
+            <!--Optional:-->
+            <dat:DataBase>?</dat:DataBase>
+         </dat:ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ServiceSoap/ExecuteDataSourceRequest"/></con:call></con:operation><con:operation id="fea83a5f-74f2-4ed7-a015-852c6d836881" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" name="ExecuteDataSourceByDataSourceKey" bindingOperationName="ExecuteDataSourceByDataSourceKey" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e64fb831-939d-4bcc-963c-7dfdf261bf32" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soap:Header/>
+   <soap:Body>
+      <dat:ExecuteDataSourceByDataSourceKey>
+         <dat:dataSourceKey>?</dat:dataSourceKey>
+      </dat:ExecuteDataSourceByDataSourceKey>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ServiceSoap/ExecuteDataSourceByDataSourceKeyRequest"/></con:call></con:operation><con:operation id="4bd7d701-3637-4dee-808a-e44b5646be12" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourcePost" name="ExecuteDataSourcePost" bindingOperationName="ExecuteDataSourcePost" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="514b1e33-4fee-4347-aee7-89b7c420249e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soap:Header/>
+   <soap:Body>
+      <dat:ExecuteDataSourcePost>
+         <dat:dataSourceKey>?</dat:dataSourceKey>
+         <!--Optional:-->
+         <dat:parameterNames>?</dat:parameterNames>
+         <!--Optional:-->
+         <dat:parameterValues>?</dat:parameterValues>
+         <!--Optional:-->
+         <dat:delimeter>?</dat:delimeter>
+      </dat:ExecuteDataSourcePost>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ServiceSoap/ExecuteDataSourcePostRequest"/></con:call></con:operation><con:operation id="780568db-3e18-4b8f-a6eb-2d8a4068fa5a" isOneWay="false" action="http://www.plexus-online.com/DataSource/GetDataSourceRequestTemplate" name="GetDataSourceRequestTemplate" bindingOperationName="GetDataSourceRequestTemplate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f1331b27-b6aa-4cfb-ab69-34ca181d6f98" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetDataSourceRequestTemplate>
+         <dat:dataSourceKey>?</dat:dataSourceKey>
+      </dat:GetDataSourceRequestTemplate>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ServiceSoap/GetDataSourceRequestTemplateRequest"/></con:call></con:operation></con:interface><con:endpointStrategy xsi:type="con:DefaultEndpointStrategy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:endpoint mode="COMPLEMENT" username="BuscheAvillaKorsws@plex.com" password="5b11b45-f59f-">https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint></con:endpointStrategy><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
