@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="556895ab-916a-4358-b177-71a4095c46f7" activeEnvironment="Default" name="PlexTestServer" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="5e4c4f0f-24aa-4161-b3bf-3bf20ef706e2" wsaVersion="NONE" name="ServiceSoap" type="wsdl" bindingName="{http://www.plexus-online.com/DataSource}ServiceSoap" soapVersion="1_1" anonymous="optional" definition="file:/home/brent/srcsoapui/plex-test.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/home/brent/srcsoapui/plex-test.wsdl"><con:part><con:url>file:/home/brent/srcsoapui/plex-test.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.plexus-online.com/DataSource" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.plexus-online.com/DataSource" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<con:soapui-project id="556895ab-916a-4358-b177-71a4095c46f7" activeEnvironment="Default" name="PlexTestServer" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="5e4c4f0f-24aa-4161-b3bf-3bf20ef706e2" wsaVersion="NONE" name="ServiceSoap" type="wsdl" bindingName="{http://www.plexus-online.com/DataSource}ServiceSoap" soapVersion="1_1" anonymous="optional" definition="file:/home/brent/srcsoapui/plex-test.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/home/brent/srcsoapui/plex-test.wsdl"><con:part><con:url>file:/home/brent/srcsoapui/plex-test.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.plexus-online.com/DataSource" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.plexus-online.com/DataSource" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://www.plexus-online.com/DataSource">
       <s:element name="ExecuteDataSource">
@@ -451,7 +451,7 @@
                <dat:InputParameter>
                   <!--Optional:-->
                   <!--Optional:BV066378 -->
-				<dat:Value>BV066669</dat:Value>
+				<dat:Value>BM328598</dat:Value>
 				<dat:Name>Serial_No</dat:Name>
                   <dat:Required>true</dat:Required>
                   <dat:Output>false</dat:Output>
@@ -697,7 +697,165 @@
          </dat:ExecuteDataSourceRequest>
       </dat:ExecuteDataSource>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f57b43ff-d827-4afe-a998-3d8cad66897c" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" name="ExecuteDataSourceByDataSourceKey" bindingOperationName="ExecuteDataSourceByDataSourceKey" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3c214397-1849-4fd2-9b00-293c58d135ce" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call><con:call id="a036b72e-5053-4900-b537-b295824a7ab7" name="Work_Request_Add"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:ExecuteDataSource>
+         <ExecuteDataSourceRequest xmlns="http://www.plexus-online.com/DataSource">
+            <DataSourceKey>34104</DataSourceKey>
+            <InputParameters>
+		      <InputParameter>
+		        <Value>Test121420a</Value>
+		        <Name>@Work_Request_No</Name>
+		        <Required>true</Required>
+		        <Output>false</Output>
+		      </InputParameter>
+
+      <InputParameter>
+        <Value>162207</Value>
+        <Name>@Equipment_Key</Name>
+        <Required>true</Required>
+        <Output>false</Output>
+      </InputParameter>
+
+      <InputParameter>
+        <Value>12/12/20</Value>
+        <Name>@Due_Date</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+
+      <InputParameter>
+        <Value>This is a test</Value>
+        <Name>@Note</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>Description</Value>
+        <Name>@Description</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>11728751</Value>
+        <Name>@Requested_By</Name>
+        <Required>true</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>11728751</Value>
+        <Name>@Assigned_To</Name>
+        <Required>true</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>917</Value>
+        <Name>@Priority_Key</Name>
+        <Required>true</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>1657</Value>
+        <Name>@Work_Request_Status_Key</Name>
+        <Required>true</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>12/12/20</Value>
+        <Name>@First_Noticed</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value></Value>
+        <Name>@Checklist_Key</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>11728751</Value>
+        <Name>@Add_By</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value></Value>
+        <Name>@Scheduled_Hours</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>12/14/20</Value>
+        <Name>@Request_Date</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value></Value>
+        <Name>@Accounting_Job_Key</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value></Value>
+        <Name>@Subsystem_Key</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value></Value>
+        <Name>@Workcenter_Log_Key</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value></Value>
+        <Name>@PM_Schedule_Key</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value></Value>
+        <Name>@Scheduled_Start_Date</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value></Value>
+        <Name>@Scheduled_End_Date</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>1</Value>
+        <Name>@Shutdown_None</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>0</Value>
+        <Name>@Shutdown_Soft</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>0</Value>
+        <Name>@Shutdown_Hard</Name>
+        <Required>false</Required>
+        <Output>false</Output>
+      </InputParameter>
+      <InputParameter>
+        <Value>0</Value>
+        <Name>@New_Key</Name>
+        <Required>false</Required>
+        <Output>true</Output>
+      </InputParameter>
+            </InputParameters>
+         </ExecuteDataSourceRequest>
+      </dat:ExecuteDataSource>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ExecuteDataSource"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f57b43ff-d827-4afe-a998-3d8cad66897c" isOneWay="false" action="http://www.plexus-online.com/DataSource/ExecuteDataSourceByDataSourceKey" name="ExecuteDataSourceByDataSourceKey" bindingOperationName="ExecuteDataSourceByDataSourceKey" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3c214397-1849-4fd2-9b00-293c58d135ce" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.plexus-online.com/DataSource">
    <soapenv:Header/>
    <soapenv:Body>
       <dat:ExecuteDataSourceByDataSourceKey>
@@ -1220,4 +1378,4 @@
          <dat:dataSourceKey>?</dat:dataSourceKey>
       </dat:GetDataSourceRequestTemplate>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ServiceSoap/GetDataSourceRequestTemplateRequest"/></con:call></con:operation></con:interface><con:endpointStrategy xsi:type="con:DefaultEndpointStrategy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:endpoint mode="COMPLEMENT" username="BuscheAvillaKorsws@plex.com" password="5b11b45-f59f-">https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint></con:endpointStrategy><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.plexus-online.com/DataSource/ServiceSoap/GetDataSourceRequestTemplateRequest"/></con:call></con:operation></con:interface><con:endpointStrategy xsi:type="con:DefaultEndpointStrategy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:endpoint mode="COMPLEMENT" username="BuscheAlbionWs2@plex.com" password="6afff48-ba19-">https://testapi.plexonline.com/DataSource/Service.asmx</con:endpoint></con:endpointStrategy><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
